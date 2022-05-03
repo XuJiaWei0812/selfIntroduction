@@ -1,2 +1,19 @@
-# selfIntroduction
- 
+ # selfIntroduction 個人網站
+
+## Demo
+
+![](https://i.imgur.com/F8Wqy5K.gif)
+
+- [Live demo](http://114.35.196.101:82/)
+
+## 使用技術
+
+前端:HTML、CSS、JavaScript
+
+前端框架:Bootstrap(css)
+
+## 功能介紹
+
+- 使用HTML、CSS、Bootstrap、JavaScript、Skrollr.js，透過GitHubPage建置，整理個人技能、接案項目與作品集。
+
+
