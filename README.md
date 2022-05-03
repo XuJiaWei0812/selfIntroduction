@@ -3,7 +3,7 @@
 
 ## Demo
 
-![](https://i.imgur.com/F8Wqy5K.gif)
+![](https://imgur.com/N3lyO9j)
 
 - [Live demo](http://114.35.196.101:82/)
 
