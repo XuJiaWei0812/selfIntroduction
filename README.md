@@ -5,7 +5,7 @@
 
 ![](https://i.imgur.com/N3lyO9j.jpg)
 
-- [Live demo](http://114.35.196.101:82/)
+- [Live demo](https://xujiawei0812.github.io/selfIntroduction/)
 
 ## 使用技術
 
