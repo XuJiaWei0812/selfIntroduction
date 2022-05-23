@@ -17,6 +17,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/stylesNew.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 
 <body id="page-top">
@@ -84,11 +85,10 @@
                 </ul>
                 <div class="subheading mb-3">業餘技能</div>
                 <ul class="fa-ul mb-0">
-                    <li>
+                    <li class="mb-3">
                         <span class="fa-li"><i class="fa-solid fa-clapperboard"></i></span>
                         剪輯工具 : DaVinci Resolve、剪映工具
                     </li>
-                    <br>
                     <li>
                         <span class="fa-li"><i class="fa-solid fa-file-lines"></i></span>
                         文書工具 : Excel、Word、PowerPoint
@@ -143,7 +143,7 @@
         <hr class="m-0" />
         <!-- 作品集-->
         <section class="resume-section portfolio" id="portfolio" data-start="transform: translateX(200px);opacity: 0"
-        data-center-center="transform: translateY(0px);opacity: 1">
+            data-center-center="transform: translateY(0px);opacity: 1">
             <div class="resume-section-content">
                 <h2 class="mb-5">作品集</h2>
                 <!-- 作品集(組)-->
@@ -170,6 +170,17 @@
                             <img class="img-fluid" src="https://i.imgur.com/0UZ5Nk8.gif" alt="..." />
                         </div>
                     </div>
+                    <!-- 第三組作品-->
+                    <div class="col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://i.imgur.com/5WnLQmN.png" alt="..." />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -188,17 +199,21 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- 作品標題-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">待辦事項</h2>
-                                <br>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4">待辦事項</h2>
                                 <!-- 作品圖片-->
-                                <img class="img-fluid rounded mb-5" src="https://i.imgur.com/F8Wqy5K.gif" alt="..." />
+                                <a data-fancybox="gallery" href="https://i.imgur.com/F8Wqy5K.gif"><img class="img-fluid rounded mb-4" src="https://i.imgur.com/F8Wqy5K.gif" alt="..." /></a>
                                 <!-- 作品敘述-->
-                                <p class="mb-4">
+                                <p class="mb-3">
                                     具備簡易會員系統，將依照會員系統顯示屬於自己的待辦事項，可以進行新增、修改、刪除等動作，
                                     在過程中會有彈跳視窗，確認是否執行動作，並且可以依照分類(未完成/已完成)顯示，
                                     排版使用Bootstrap的Grid網格系統達到RWD的效果。
-                                    <a href="http://114.35.196.101:82/">前往網頁</a>
                                 </p>
+                                <nav aria-label="breadcrumb" class="d-flex justify-content-center mb-3">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="http://114.35.196.101:82/">前往網頁</a></li>
+                                        <li class="breadcrumb-item"><a href="https://github.com/XuJiaWei0812/toDoList">原始碼</a></li>
+                                    </ol>
+                                </nav>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
                                     關閉作品
@@ -222,16 +237,55 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- 作品標題-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">簡易購物車</h2>
-                                <br>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4">簡易購物車</h2>
                                 <!-- 作品圖片-->
-                                <img class="img-fluid rounded mb-5" src="https://i.imgur.com/0UZ5Nk8.gif" alt="..." />
+                                <a data-fancybox="gallery" href="https://i.imgur.com/0UZ5Nk8.gif"><img class="img-fluid rounded mb-5" src="https://i.imgur.com/0UZ5Nk8.gif" alt="..." /></a>
                                 <!-- 作品敘述-->
                                 <p class="mb-4">可以加入商品進購物車，購物車內可以增加及減少商品數量，
                                     也可以刪除商品，結帳時可以選擇綠界付款或LINEPay，
                                     結帳完成訂單會變已付款狀態。
-                                    <a href="http://114.35.196.101:80/">前往網頁</a>
                                 </p>
+                                <nav aria-label="breadcrumb" class="d-flex justify-content-center mb-3">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="http://114.35.196.101:80/">前往網頁</a></li>
+                                        <li class="breadcrumb-item"><a href="https://github.com/XuJiaWei0812/shoppingCart">原始碼</a></li>
+                                    </ol>
+                                </nav>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    關閉作品
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第三組作品-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- 作品標題-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4">甜點電商版型</h2>
+                                <!-- 作品圖片-->
+                                <a data-fancybox="gallery" href="https://i.imgur.com/5WnLQmN.png"><img class="img-fluid rounded mb-5" src="https://i.imgur.com/5WnLQmN.png" alt="..." /></a>
+                                <!-- 作品敘述-->
+                                <p class="mb-4">六角學院的切版練習題，將Bootstrap4改成Bootstrap5，90%的樣式還原成功，10%細節處些許不同。
+                                </p>
+                                <nav aria-label="breadcrumb" class="d-flex justify-content-center mb-3">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="https://xujiawei0812.github.io/cuttingPractice01/">前往網頁</a></li>
+                                        <li class="breadcrumb-item"><a href="https://github.com/XuJiaWei0812/cuttingPractice01">原始碼</a></li>
+                                    </ol>
+                                </nav>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
                                     關閉作品
@@ -251,6 +305,7 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
