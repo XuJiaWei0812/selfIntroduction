@@ -47,6 +47,10 @@
  height: 288.88px;
 }
 
+.social-icons .social-icon:hover {
+    background-color: #9D9D9D;
+}
+
 @media (min-width: 992px) {
     .portfolio-modal .portfolio-modal-title {
         font-size: 3rem;
